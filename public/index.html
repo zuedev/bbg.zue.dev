@@ -12,6 +12,11 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
+      html {
+        background-color: #006eff;
+        color: white;
+      }
+
       html::-webkit-scrollbar {
         display: none;
       }
@@ -31,14 +36,23 @@
         flex-direction: column;
         height: 100vh;
 
-        background-color: #006eff;
-        color: white;
-
         font-family: monospace;
 
         max-width: 720px;
         width: 100%;
         margin: auto;
+
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
 
       p {
