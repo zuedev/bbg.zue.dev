@@ -7,6 +7,10 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
+      html::-webkit-scrollbar {
+        display: none;
+      }
+
       .itim-regular {
         font-family: "Itim", cursive;
         font-weight: 400;
@@ -19,22 +23,28 @@
 
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         height: 100vh;
 
-        background-color: rgb(0, 0, 127);
+        background-color: #006eff;
         color: white;
 
         font-family: monospace;
-      }
 
-      h1 {
-        font-size: 4rem;
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
       }
 
       p {
         font-size: 2rem;
+        text-align: justify;
+        padding: 1rem;
+      }
+
+      span {
+        text-align: right;
+        padding: 1rem;
       }
 
       a {
@@ -44,11 +54,14 @@
     </style>
   </head>
   <body class="itim-regular">
-    <h1>Blue Bean Games</h1>
-    <p>We're making our first game! Keep an eye out for updates.</p>
     <p>
+      Blue Bean Games is a newly-formed game studio that believes in the power
+      of open-source software. All of our work is completely dedicated to the
+      public domain from company literature to video games.
+    </p>
+    <span>
       "Blue Bean Games" is made with ❤️ by
       <a href="https://zue.dev" target="_blank">zue.dev</a>
-    </p>
+    </span>
   </body>
 </html>
